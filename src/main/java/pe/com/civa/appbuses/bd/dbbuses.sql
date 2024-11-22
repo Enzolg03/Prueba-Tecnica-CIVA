@@ -28,7 +28,7 @@ CREATE TABLE `bus` (
   `idbus` bigint NOT NULL AUTO_INCREMENT,
   `activo` bit(1) NOT NULL,
   `caracteristicas` varchar(255) DEFAULT NULL,
-  `fecha_creacion` datetime(6) DEFAULT NULL,
+  `fecha_creacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `nro_bus` int DEFAULT NULL,
   `placa` varchar(255) DEFAULT NULL,
   `marca` int DEFAULT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE `bus` (
 
 LOCK TABLES `bus` WRITE;
 /*!40000 ALTER TABLE `bus` DISABLE KEYS */;
-INSERT INTO `bus` VALUES (1,_binary '','Pantalla LED, accesibilidad para sillas de ruedas',NULL,430,'GKL-414',1),(2,_binary '','Aire acondicionado, Wi-Fi, USB',NULL,513,'GKL-415',2),(3,_binary '','Pantalla LCD, acceso para discapacitados, espacio amplio',NULL,951,'KSQ-938',3),(4,_binary '','Asientos reclinables, cámaras de seguridad',NULL,852,'ARC-851',4),(5,_binary '\0','Conexión para carga de móviles, aire acondicionado',NULL,21,'AGF-461',5),(6,_binary '','Pantalla de información, accesibilidad para sillas de ruedas',NULL,536,'SGT-947',1),(7,_binary '','Wi-Fi, aire acondicionado, asientos ergonómicos',NULL,942,'YPX-836',2),(8,_binary '\0','Camaras de seguridad, Wi-Fi',NULL,152,'CQB-673',3),(9,_binary '','Pantalla LED, conexión para carga de móviles',NULL,592,'EVZ-354',4),(10,_binary '','Acceso para discapacitados, aire acondicionado',NULL,841,'QDQ-847',5);
+INSERT INTO `bus` VALUES (1,_binary '','Pantalla LED, accesibilidad para sillas de ruedas','2024-11-22 21:20:22',430,'GKL-414',1),(2,_binary '','Aire acondicionado, Wi-Fi, USB','2024-11-22 21:20:22',513,'GKL-415',2),(3,_binary '','Pantalla LCD, acceso para discapacitados, espacio amplio','2024-11-22 21:20:22',951,'KSQ-938',3),(4,_binary '','Asientos reclinables, cámaras de seguridad','2024-11-22 21:20:22',852,'ARC-851',4),(5,_binary '\0','Conexión para carga de móviles, aire acondicionado','2024-11-22 21:20:22',21,'AGF-461',5),(6,_binary '','Pantalla de información, accesibilidad para sillas de ruedas','2024-11-22 21:20:22',536,'SGT-947',1),(7,_binary '','Wi-Fi, aire acondicionado, asientos ergonómicos','2024-11-22 21:20:22',942,'YPX-836',2),(8,_binary '\0','Camaras de seguridad, Wi-Fi','2024-11-22 21:20:22',152,'CQB-673',3),(9,_binary '','Pantalla LED, conexión para carga de móviles','2024-11-22 21:20:22',592,'EVZ-354',4),(10,_binary '','Acceso para discapacitados, aire acondicionado','2024-11-22 21:20:22',841,'QDQ-847',5);
 /*!40000 ALTER TABLE `bus` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,4 +89,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-11-22 14:11:23
+-- Dump completed on 2024-11-22 16:22:03
